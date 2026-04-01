@@ -2,11 +2,12 @@
 import {View, Text, StyleSheet} from 'react-native';
 
 export default function TelaDetalhes({route}){
-    //const {id, nome} = route.params;
+    const {id, nome} = route.params || {};
     return(
         <View>
             <Text style={styles.titulo}>Tela Detalhes</Text>
-            
+            <Text>ID: {id}</Text>
+            <Text>Nome: {nome}</Text>
         </View>
     );
 }

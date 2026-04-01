@@ -10,8 +10,8 @@ export default function NavegacaoAbas(){
     return(
         <Tab.Navigator>
             <Tab.Screen name='Home' component={TelaInicial} />
-            <Tab.Screen name='Detalhes' component={TelaDetalhes} />
-            <Tab.Screen name='Configuracoes' component={TelaConfiguracoes} />
+            <Tab.Screen name='Detalhes' component={TelaDetalhes} initialParams={{ id: 0, nome: 'Nenhum item' }}/>
+            <Tab.Screen name='Configuracoes' component={TelaConfiguracoes} initialParams={{ url : 'Nenhum item' }} />
         </Tab.Navigator>
     );
 }

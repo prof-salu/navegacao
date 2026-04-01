@@ -20,6 +20,7 @@ export default function TelaInicial({navigation}){
                     )}/>
 
             <TextInput 
+                style={styles.entrada}
                 placeholder='Informe a URL'
                 value={url}
                 onChangeText={setUrl}/>
@@ -32,5 +33,7 @@ const styles = StyleSheet.create({
         flex: 1, alignItems: 'center', justifyContent: 'center',
     }, titulo: {
         fontSize: 20, marginBottom: 20, fontWeight: 'bold', textAlign: 'center'
+    }, entrada: {
+        borderWidth: 1, fontSize: 16, padding: 5, margin: 5,
     }
 })
